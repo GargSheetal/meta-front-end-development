@@ -1,0 +1,16 @@
+.box {
+    display: grid;
+    width: 240px;
+    height: 240px;
+    margin: 100px;
+    background-color: rgb(55, 255, 5, 0.5);
+    border-radius: 12px;
+    border: 4px solid hsl(120, 76%, 68%);
+}
+
+.box:hover {
+    transform: rotateZ(60deg);
+    background-color: lightcoral;
+    opacity: o.5;
+    transition: 2s;
+}

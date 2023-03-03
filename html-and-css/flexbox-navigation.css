@@ -1,0 +1,30 @@
+/*    * represents that whateever code is inside this will apply to all the elements in the code  
+The below block is used to clear any formatting that is browser specific    */
+* {                                 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: hsl(235, 21%, 21%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+.container li {
+    list-style-type: none;
+}
+
+.container a {
+    display: inline-block;
+    padding: 2px;
+    margin: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.container a:hover {
+    background-color: lightsteelblue;
+}

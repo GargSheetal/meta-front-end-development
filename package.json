@@ -1,0 +1,25 @@
+{
+  "name": "meta-front-end-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GargSheetal/meta-front-end-development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GargSheetal/meta-front-end-development/issues"
+  },
+  "homepage": "https://github.com/GargSheetal/meta-front-end-development#readme",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard": "^29.0.0"
+  }
+}

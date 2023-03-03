@@ -1,0 +1,23 @@
+body {
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: #bb769b;
+    text-align: center;
+    padding: 2em;   /* 2EM is a relative height which is twice the size of the current font height */
+}
+
+main {
+    background-color: #aa56;
+    text-align: center;
+    padding: 2em;   /* 2EM is a relative height which is twice the size of the current font height */
+}
+
+footer {
+    background-color: #d37786;
+    text-align: center;
+    padding: 2em;   /* 2EM is a relative height which is twice the size of the current font height */
+}

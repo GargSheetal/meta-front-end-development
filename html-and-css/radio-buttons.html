@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Little Lemon</title>
+        <link rel="stylesheet" href="styles.css">
+    </header>
+    <body>
+        <header> 
+            <img src="logo.png">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>  
+                <li><a href="location.html">Location</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Book a Table</h1>
+            <form method="POST">
+                <!-- The fieldset element defines a group for the radio buttons -->
+                <fieldset id="size">
+                <!-- Wrapping the input tag in label tag ssts the radio buttons and text both as input area. Clicking any of the two will select the option -->
+                <label>
+                    <input type="radio" value="2" name="size"> 2-person table
+                </label>
+                <label>
+                    <input type="radio" value="4" name="size" checked> 4-person table
+                </label>
+                <label>
+                    <input type="radio" value="6" name="size"> 6-person table
+                </label>
+                </fieldset>
+                <fieldset id="location">
+                <label>
+                    <input type="radio" value="indoors" name="location" checked> Indoors
+                </label>
+                <label>
+                    <input type="radio" value="outdoors" name="location"> Outdoors
+                </label>
+                </fieldset>
+                <button type="submit">Book Table</button>
+            </form>
+        </main>
+        <footer>
+            <p>Copyright Little Lemon</p>
+        </footer>
+    </body>
+</html>

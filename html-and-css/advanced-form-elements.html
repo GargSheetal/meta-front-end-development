@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Little Lemon</title>
+        <link rel="stylesheet" href="styles.css">
+    </header>
+    <body>
+        <header> 
+            <img src="logo.png">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>  
+                <li><a href="location.html">Location</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Book a Table</h1>
+            <form method="POST">
+                <div>
+                    <label for="booking_date">Booking Date</label>
+                    <input type="date" id="booking_date" name="booking_date">
+                </div>
+                <label for="booking_people">Number of People</label>
+                    <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" 
+                    oninput="this.nextElementSibling.value=this.value"> <!-- This will update the output element with the value of the slider when it changes -->
+                    <output>4</output>  <!-- its value should match the value element in input tag. Output element contains the result of a calculation -->
+                        <!-- Here i want Output to display the value of the slider, so i add another piece of code to the input tag- oninput -->
+                <div>
+                    <label for="booking_location">Location</label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">  <!-- the id value should be same as list value above. You can add any number of options -->
+                        <option value="Downtown"></option>
+                        <option value="Uptown"></option>
+                    </datalist> 
+                </div>
+                <button type="submit">Book Table</button>
+            </form>
+        </main>
+        <footer>
+            <p>Copyright Little Lemon</p>
+        </footer>
+    </body>
+</html>
